@@ -10,6 +10,8 @@ int main() {
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
 
+    int y;
+    int x;
     int tabuleiro[5] [5] = {
 
         {3,3,3,0,0},
@@ -19,6 +21,24 @@ int main() {
         {0,0,0,3,0}
 
     };
+
+    printf("As posições dos navios no tabuleiro são indicadas pelo número 3 e estão localizadas nas seguintes coordenadas: \n");
+    printf("tabuleiro [0][0], tabuleiro [0][1], tabuleiro [0][2]. \n e \n");
+    printf("tabuleiro [2][3], tabuleiro [3][3], tabuleiro [4][3]. \n \n");
+
+    printf("Executando o código é possível verificar as coordenadas visivelmente. \n \n");
+
+    // Estrutura de repetição "for" utilizada para reproduzir o tabuleiro.
+    // "Y" refere-se às linhas e "X" às colunas.
+
+    for(y = 0; y <= 4; y ++){
+        for(x = 0; x <= 4; x ++){
+            printf("%d,", tabuleiro[y][x]);
+        }
+        
+        printf("\n");
+
+    }
 
    
 
